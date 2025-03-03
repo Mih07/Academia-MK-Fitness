@@ -1,0 +1,132 @@
+.carousel-caption a {
+  border-radius: 15px;
+}
+.carousel-caption h2 {
+    color: #E63946;
+    font-family: cursive;
+    font-weight: bold;
+}
+/* Alterar a cor da seta do botão "Próximo" */
+.carousel-control-next-icon {
+    background-color: blue; /* Define a cor da seta */
+    border-radius: 50%;     /* Deixa o fundo arredondado */
+  }
+  /* Alterar a cor da seta do botão "Anterior" */
+  .carousel-control-prev-icon {
+    background-color: red; /* Define a cor da seta */
+    border-radius: 50%;   /* Deixa o fundo arredondado */
+  }
+
+  .carousel-item img {
+    height: 550px;
+  }
+
+  
+.carousel-inner img {
+  display: flex;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: auto;
+  margin: 5px;
+  justify-content: center;
+  box-shadow: 2px 6px 12px black;
+}
+.btn-success {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: oblique;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin: 10px;
+  text-decoration: none;
+}
+.btn-success:hover {
+  background-color: green;
+}
+
+.btn {
+  display: block;
+  background-color: rgb(83, 202, 102);
+  justify-content: center;
+  color: black;
+  font-weight: 800;
+  font-size: 24px;
+  font-family: italic;
+  
+}
+  
+  /*Tabela de Serviço*/
+  .table {
+    margin-top: 20px;
+    border-collapse: collapse; /*borda mais limpa*/
+    background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+    border-radius: 10px;
+    overflow: hidden; /*arredondamento funcionar bem*/
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 1.0); /*efeito elevação*/
+  }
+
+  .table th, .table td {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-container {
+    display: flex; 
+    justify-content: flex-start;
+    gap: 40px;
+    font-weight: 200;
+    padding-bottom: 40px;
+    padding: 20px;
+    
+  }
+
+  
+  .footer-container img {
+    transition: transform 0.3s ease-in-out;
+  }
+  .footer-container img:hover {
+    transform: scale(1.3); /* Efeito ao passar o mouse */
+  }
+
+  .footer-adress {
+    text-align: justify;
+    
+  }
+  
+  .footer-social p {
+    
+    color: blue;
+    margin-top: 10px;
+    
+  }
+
+  .footer-copyright {
+    text-align: center;
+    padding: 10x;
+    font-weight: bold;
+  }
+  
+  
+
+
+@media (max-width: 568px) {
+  .carousel-item img {
+    height: 350px ;
+    width: 300px ;
+  }
+
+  
+}
+@media (max-width: 1024px) {
+  .carousel-item img {
+    height: 350px ;
+    width: 150px ;
+  }
+
+  
+}
