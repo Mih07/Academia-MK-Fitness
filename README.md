@@ -12,4 +12,4 @@ Projeto do site da Academia MK Fitness, com informações sobre planos, serviço
 ✅ Layout responsivo  
 
 ## 📌 Como visualizar?
-Abra o arquivo `index.html` em seu navegador.  
+Acesse: https://www.academiamkfitness.com/ 
