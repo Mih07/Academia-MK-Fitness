@@ -1,11 +1,24 @@
-.carousel-caption a {
-  border-radius: 15px;
+html {
+  scroll-behavior: smooth;
+  /* Garante que o conteúdo pare abaixo da barra preta */
+  scroll-padding-top: 90px; 
+}
+
+.carousel-caption h1 {
+    color: #ecf0f1;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 .carousel-caption h2 {
-    color: #E63946;
-    font-family: cursive;
-    font-weight: bold;
+    color: #ecf0f1;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    margin-top: 10px;
 }
+
 /* Alterar a cor da seta do botão "Próximo" */
 .carousel-control-next-icon {
     background-color: blue; /* Define a cor da seta */
@@ -18,7 +31,10 @@
   }
 
   .carousel-item img {
-    height: 550px;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   
@@ -75,49 +91,47 @@
     padding: 20px;
   }
 
-  .footer-container {
-    display: flex; 
-    justify-content: flex-start;
-    gap: 40px;
-    font-weight: 200;
-    padding-bottom: 40px;
-    padding: 20px;
-    
-  }
-
-  
-  .footer-container img {
-    transition: transform 0.3s ease-in-out;
-  }
-  .footer-container img:hover {
-    transform: scale(1.3); /* Efeito ao passar o mouse */
-  }
-
-  .footer-adress {
-    text-align: justify;
-    
-  }
-  
-  .footer-social p {
-    
-    color: blue;
-    margin-top: 10px;
-    
-  }
-
-  .footer-copyright {
+footer {
+    background-color: #0c0c0c !important; /* Um fundo quase preto muito sofisticado */
+    border-top: 4px solid #198754; /* Linha verde oficial do Bootstrap para dar acabamento */
     text-align: center;
-    padding: 10x;
+    padding: 40px 0 20px 0; 
+}
+
+footer h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #198754; /* Títulos em verde para combinar com a marca */
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #adb5bd; /* Cor suave para não cansar a vista */
+}
+
+/* Efeito ao passar o mouse no seu nome (branding) */
+footer a.text-success:hover {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+  /* Arredondamento dos Botões do Footer */
+footer .btn {
+    border-radius: 50px !important; /* Deixa o botão 'Ver no Google Maps' arredondado */
     font-weight: bold;
-  }
-  
-  
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+footer .btn:hover {
+    transform: scale(1.05); /* Efeito de zoom sutil ao passar o mouse */
+}
 
 
 @media (max-width: 568px) {
   .carousel-item img {
-    height: 350px ;
-    width: 300px ;
+    height: 280px ;
+    
   }
 
   
